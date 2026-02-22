@@ -1,4 +1,4 @@
-name: Test E2E Suites
+name: Test E2E Workflow
 on: 
   workflow_dispatch:
     inputs:
