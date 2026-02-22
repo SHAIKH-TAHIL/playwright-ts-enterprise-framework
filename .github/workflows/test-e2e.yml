@@ -1,6 +1,16 @@
 name: Test E2E Suites
 on: 
   workflow_dispatch:
+    inputs:
+      browser: 
+        description: "Select a browser"
+        required: true
+        default: chrome
+        type: choice
+        options:
+        - chrome
+        - firefox
+        - safari
   
 jobs:
   example:
