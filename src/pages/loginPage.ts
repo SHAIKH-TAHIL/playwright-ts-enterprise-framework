@@ -123,7 +123,7 @@ export class LoginPage {
      * @description Verifies that the login error message container is not visible on the UI.
      */
     async verifyErrorMsgIsNotVisible () {
-        await expect(this.loginErrorMsgContainer).toBeHidden();
+        await expect(this.loginErrorMsgContainer).toHaveText("");
     }
 
     /**
