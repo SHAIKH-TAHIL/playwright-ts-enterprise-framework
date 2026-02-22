@@ -2,13 +2,20 @@
   "name": "saucedemoautomation",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "lint": "npx eslint . --ext .ts --max-warnings 0",
+    "lintfix": "npx eslint . --fix --ext .ts --max-warnings 0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.58.0",
-    "@types/node": "^25.0.10"
+    "@types/node": "^25.0.10",
+    "eslint": "^8.57.1",
+    "globals": "^17.3.0",
+    "typescript-eslint": "^8.56.0"
   }
 }
