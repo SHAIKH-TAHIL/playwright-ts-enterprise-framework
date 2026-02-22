@@ -21,7 +21,7 @@ on:
         - safari
   
 jobs:
-  example:
+  E2E Workflow:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -37,7 +37,7 @@ jobs:
         run: npm ci
 
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: npx playwright install --with-deps ${{ inputs.browser }}
 
       - name: Run selected suite
         run: npx playwright test ${{ inputs.suite }}.spec.ts --project=${{ inputs.browser }}
